@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PopUpActivity"
+    android:background="@drawable/button_pattern_two"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/create_mutual_event_title"
+        android:layout_width="350dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/create_mutual_event" />
+
+    <ImageView
+        android:layout_width="224dp"
+        android:layout_height="31dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/create_mutual_event_title"
+        android:src="@drawable/title_tv"
+        android:id="@+id/tv_title" />
+
+    <EditText
+        android:id="@+id/editText_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:layout_below="@id/tv_title"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"/>
+
+    <ImageView
+        android:id="@+id/description"
+        android:layout_width="238dp"
+        android:layout_height="46dp"
+        android:layout_below="@id/editText_title"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/description_tv"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/editText_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:layout_below="@id/description"
+        android:layout_centerHorizontal="true"
+        android:textSize="12sp"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editText_description"
+        android:id="@+id/linear_layout1"
+        android:weightSum="4">
+        <ImageView
+            android:id="@+id/textView4"
+            android:layout_width="224dp"
+            android:layout_height="31dp"
+            android:layout_weight="2"
+            android:src="@drawable/starts_at_tv"/>
+        <ImageView
+            android:id="@+id/textView6"
+            android:layout_width="224dp"
+            android:layout_height="31dp"
+            android:layout_weight="2"
+            android:src="@drawable/ends_at_tv"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_layout1"
+        android:id="@+id/linear_layout"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/starts_at"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:background="@drawable/button_pattern_thre"
+            android:text="12:00" />
+
+        <Button
+            android:id="@+id/ends_at"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_weight="2"
+            android:background="@drawable/button_pattern_thre"
+            android:text="13:00" />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@id/linear_layout"
+        android:text="It's A Date!"
+        android:textSize="25sp"
+        android:background="@drawable/button_pattern_thre"
+        android:id="@+id/its_a_date_button"/>
+
+</RelativeLayout>

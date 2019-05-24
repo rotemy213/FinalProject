@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/search_users"
+            android:icon="@drawable/mutual_events_icon"
+            android:contentDescription="Create a Social Event With Your Friends!"
+            android:title="Mutual Event" />
+        <item
+            android:id="@+id/Handle_Events"
+            android:icon="@drawable/create_an_event_icon"
+            android:title="Private Event" />
+        <item
+            android:id="@+id/manage_events"
+            android:title="Manage My Events"
+            android:icon="@drawable/manage_events_icon">
+
+        </item>
+        <item
+            android:id="@+id/calendar_link"
+            android:icon="@drawable/calendar_icon"
+            android:title="My Calendar"   />
+
+    </group>
+</menu>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome"
+
+    tools:context=".PrivateEvent">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_alignParentStart="true"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_corner">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="301dp"
+                    android:layout_height="154dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/title_create_an_event"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <EditText
+                    android:id="@+id/title_event"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_margin="2dp"
+                    android:background="@drawable/button_pattern_two"
+                    android:ems="10"
+                    android:hint="Title of Event"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+                <ImageView
+                    android:id="@+id/textView2"
+                    android:layout_width="224dp"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:src="@drawable/title_tv"
+                    android:text="Title"
+                    android:textSize="25sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+                <LinearLayout
+                    android:id="@+id/start_end_hour_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    app:layout_constraintTop_toBottomOf="@id/title_event">
+
+                    <ImageView
+                        android:id="@+id/textView4"
+                        android:layout_width="224dp"
+                        android:layout_height="31dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/starts_at_tv"
+                        android:text="Starts at:"
+                        android:textSize="25sp" />
+
+                    <ImageView
+                        android:id="@+id/textView6"
+                        android:layout_width="224dp"
+                        android:layout_height="31dp"
+                        android:layout_weight="2"
+                        android:src="@drawable/ends_at_tv"
+                        android:text="Ends at:"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="4"
+                    app:layout_constraintTop_toBottomOf="@id/start_end_hour_layout">
+
+                    <Button
+                        android:id="@+id/button_start"
+                        android:layout_width="match_parent"
+                        android:layout_height="106dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/button_pattern_two"
+                        android:text="12:00"
+                        android:textColor="@color/cast_expanded_controller_background_color"
+                        android:textSize="25sp"
+                        android:textStyle="italic" />
+
+                    <Button
+                        android:id="@+id/button_end"
+                        android:layout_width="match_parent"
+                        android:layout_height="106dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/button_pattern_two"
+                        android:text="13:00"
+                        android:textColor="#000000"
+
+                        android:textSize="25sp"
+                        android:textStyle="italic" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/upload"
+                    android:layout_width="match_parent"
+                    android:layout_height="106dp"
+                    android:background="@drawable/upload_btn"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textSize="30sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/change_date" />
+
+                <Button
+                    android:id="@+id/change_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="106dp"
+                    android:background="@drawable/button_pattern_two"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#0e0c9a"
+                    android:textSize="25sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linear_layout"
+                    app:layout_constraintVertical_bias="0.0" />
+
+            </android.support.constraint.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

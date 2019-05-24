@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">ItsADate</string>
+    <string name="YOUR_API_KEY">AIzaSyCCp6MaMzI-vN1O0aVvse3YGEOdJy5p0Cc</string>
+    <string name="server_client_id">190051669543-sgvnlrurd0i3aa96n1ij2205k2qfnvjg.apps.googleusercontent.com</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="date_label_set">Press the button to set the date</string>
+    <string name="date_button_set">Set Date</string>
+    <string name="date_view_set">The Date is: </string>
+    <string name="date_selected"></string>
+
+</resources>
